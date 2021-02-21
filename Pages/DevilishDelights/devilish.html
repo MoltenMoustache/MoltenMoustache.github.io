@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Devilish Delights - Josh Moten</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Media/Images/Icons/site-icon.png">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+
+    <header id="Home">
+        <div class="logo">
+            <a href=/index.html><img src="/Media/Images/Icons/logo-white-v2.png"></a>
+        </div>
+
+        <nav id="NavMenu">
+            <button class="menuBtn"><a href="/index.html"> HOME </a></button>
+            <button class="menuBtn"><a href="/index.html#about"> ABOUT </a></li>
+                <button class="menuBtn"><a href="/index.html#projects"> PROJECTS </a></li>
+                    <button class="menuBtn"><a href="/index.html#contact"> CONTACT </a></li>
+        </nav>
+
+        <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("NavMenu")
+            var btns = header.getElementsByClassName("menuBtn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+                    this.className += " active";
+                });
+            }
+        </script>
+
+    </header>
+
+    
+<div class = projectSplash>
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/qjc9kEPzrI4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class = projectContent id = jumpstartDetails>
+    <div class = leftTextContent>
+        <h2>Devilish Delights</h2>
+    <p>
+        In Devilish Delights, you play as a demon that has to fulfill as many food orders as you can in three minutes in Hell's kitchen.
+        Cook delicious cuisines such as; The Finger Dog, Eyeball Stew, Devilled Eggs
+<br><br>
+        Devlish Delights was made by a team of 10 during a game jam at AIE. The theme was randomly generated for each team and ours was "Blazing Kitchen Project." The team was comprised of 3 designers, 5 artists and 2 programmers. My role on the team was Lead Programmer.
+    </p>
+    
+<div class = projectButtons>
+    <a href = "https://moltenmoustache.itch.io/devillish-delights" target = "_blank"><button class = link>itch.io</button></a>
+</div>
+</div>
+
+</div>
+
+<div class = projectContribution>
+    <div class = rightTextContent>
+        <h2>Contribution</h2>
+        <ul>
+            <li>Player Controller and Interaction</li>
+            <li>Tools for designers to create new recipes and food items</li>
+            <li>Randomised orders</li>
+            <li>Raw Food Baskets</li>
+            <li>Food Preperation</li>
+            <li>Food Delivery and Score System</li>
+            <li>Death/Respawn System</li>
+        </ul>
+</div>
+</body>
+</html>

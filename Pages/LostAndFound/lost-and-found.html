@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Lost and Found - Josh Moten</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Media/Images/Icons/site-icon.png">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+
+    <header id="Home">
+        <div class="logo">
+            <a href=/index.html><img src="/Media/Images/Icons/logo-white-v2.png"></a>
+        </div>
+
+        <nav id="NavMenu">
+            <button class="menuBtn"><a href="/index.html"> HOME </a></button>
+            <button class="menuBtn"><a href="/index.html#about"> ABOUT </a></li>
+                <button class="menuBtn"><a href="/index.html#projects"> PROJECTS </a></li>
+                    <button class="menuBtn"><a href="/index.html#contact"> CONTACT </a></li>
+        </nav>
+
+        <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("NavMenu")
+            var btns = header.getElementsByClassName("menuBtn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+                    this.className += " active";
+                });
+            }
+        </script>
+
+    </header>
+
+    
+<div class = projectSplash>
+    <img width="1200" height="675" src = "/Media/Images/Projects/LostAndFound/LostAndFound.jpg">
+    <!--<iframe width="1200" height="675" src="https://www.youtube.com/embed/nWSpisAfTnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+</div>
+
+<div class = projectContent id = jumpstartDetails>
+    <div class = leftTextContent>
+        <h2>Lost and Found</h2>
+    <p>
+        "You're volunteering at a hospital and your job is to run the Lost and Found booth, returning the lost items of patients who come asking. Make sure to double check before you give away items!" 
+
+<br><br>
+    Lost and Found was made by myself and <a href = https://jaydeo4.wixsite.com/jaydoncuevafolio target = "_blank">Jaydon Cueva</a> for the Global Game Jam 2021 (Australia edition). It was developed over the course of two days using the theme 'Lost and Found', my role on the team was the sole programmer.
+    </p>
+    
+<div class = projectButtons>
+    <a href = "https://moltenmoustache.itch.io/lost-and-found" target = "_blank"><button class = link>itch.io</button></a>
+    <a href = "https://globalgamejam.org/2021/games/lost-and-found-8-1" target = "_blank"><button class = link>Global Game Jam</button></a>
+    <a href = "https://github.com/MoltenMoustache/GGJ2021" target = "_blank"><button class = link>GitHub</button></a>
+</div>
+</div>
+
+</div>
+
+<div class = projectContribution>
+    <div class = rightTextContent>
+        <h2>Contribution</h2>
+        <ul>
+            <li>Randomised Item Generation</li>
+            <li>Randomised NPC Dialogue and Generation</li>
+            <li>Item Examination System</li>
+            <li>Day Cycle</li>
+            <li>Player Response Options</li>
+            <li>Scoring System</li>
+            <li>Randomised NPC Requested Item</li>
+        </ul>
+</div>
+</body>
+</html>

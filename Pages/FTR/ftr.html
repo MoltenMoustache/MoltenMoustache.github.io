@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Frame This Redux - Josh Moten</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/Media/Images/Icons/site-icon.png">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+
+
+    <header id="Home">
+        <div class="logo">
+            <a href=/index.html><img src="/Media/Images/Icons/logo-white-v2.png"></a>
+        </div>
+
+        <nav id="NavMenu">
+            <button class="menuBtn"><a href="/index.html"> HOME </a></button>
+            <button class="menuBtn"><a href="/index.html#about"> ABOUT </a></li>
+                <button class="menuBtn"><a href="/index.html#projects"> PROJECTS </a></li>
+                    <button class="menuBtn"><a href="/index.html#contact"> CONTACT </a></li>
+        </nav>
+
+        <script>
+            // Add active class to the current button (highlight it)
+            var header = document.getElementById("NavMenu")
+            var btns = header.getElementsByClassName("menuBtn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    var current = document.getElementsByClassName("active");
+                    if (current.length > 0) {
+                        current[0].className = current[0].className.replace(" active", "");
+                    }
+                    this.className += " active";
+                });
+            }
+        </script>
+
+    </header>
+
+    
+<div class = projectSplash>
+    <iframe width="1200" height="675" src="https://www.youtube.com/embed/nWSpisAfTnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div class = projectContent id = jumpstartDetails>
+    <div class = leftTextContent>
+        <h2>Jumpstart Apocalypse</h2>
+    <p>
+        Jumpstart Apocalypse is a stylised VR zombie shooter that was made by a team of 9 developers working remotely over a course of 4 months.
+<br><br>
+        I was Lead Programmer on the project, and also programmed the player controller/interactors, interactable items in the form of throwables, melee weapons and firearms, audio/particle management, and much more. The game has now been officially shipped on itch.io and Gamejolt.
+    </p>
+    
+<div class = projectButtons>
+    <a href = "https://tastybiscuit.itch.io/jumpstartapocalypse" target = "_blank"><button class = link>itch.io</button></a>
+    <a href = "https://gamejolt.com/games/jumpstartapocalypse/556520" target = "_blank"><button class = link>GameJolt</button></a>
+</div>
+</div>
+
+</div>
+
+<div class = projectContribution>
+    <div class = rightTextContent>
+        <h2>Contribution</h2>
+        <ul>
+            <li>Cross-Platform VR through UnityXR</li>
+            <li>Custom VR Input and Interaction System</li>
+            <li>Player controller with smooth locomotion and teleporting</li>
+            <li>Melee, Thrown and Projectile Weapons</li>
+            <li>VR Worldspace UI Interaction</li>
+            <li>Dynamic Inventory System</li>
+            <li>Audio/Particle Pooling System</li>
+            <li>Scripted Events; i.e Bell Tower Explosion</li>
+        </ul>
+</div>
+</body>
+</html>

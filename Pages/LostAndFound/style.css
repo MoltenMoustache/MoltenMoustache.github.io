@@ -1,0 +1,212 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Verdana;
+}
+
+p a
+{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+html
+{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.content
+{
+    padding: 10;
+    display:flex;
+    justify-content: center;
+}
+
+header
+{
+    height: 100px;
+    width: auto;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    background-color: rgba(31, 32, 37, 1);
+    z-index: 100;
+    padding: 7 7 0;
+    overflow-x: hidden;
+}
+
+header nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    margin-right: 2vw;
+}
+
+header nav button
+{
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    border: 0px;
+}
+
+header nav button a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    margin: 1px;
+}
+
+header nav button.active a
+{
+    margin: 0px;
+    border: 1px solid white;
+}
+
+header nav button a:hover
+{
+    margin: 0px;
+    border: 1px solid white;
+}
+
+.logo img
+{
+    width: 300px;
+    height: auto;
+    float: left;
+}
+
+.projectSplash
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(39, 40, 45, 1);
+    background-image: url("/Media/Images/Projects/LostAndFound/holdingCar.png");
+    background-size: cover;
+}
+
+.projectSplash iframe
+{
+    padding: 40;
+}
+
+.projectSplash img
+{
+    padding: 40;
+    object-fit: cover;
+}
+
+.projectContent
+{
+    background-color: rgba(31, 32, 37, 1);
+    display: flex;
+    justify-content: center;
+    background-image: url("/Media/Images/Projects/LostAndFound/girl.png");
+    background-size: cover;
+}
+
+.leftTextContent 
+{
+    text-align: right;
+    width: 60vw;
+    padding: 100;
+    color: white;
+}
+
+.leftTextContent h2
+{
+    font-size: 32;
+}
+
+.leftTextContent p
+{
+    padding-top: 40;
+    word-wrap: break-word;
+    font-size: 18;
+    line-height: 1.75;
+    float: right;
+}
+
+.leftTextContent .contribution
+{
+    word-wrap: none;
+    font-size: 12;
+    line-height: 2;
+}
+
+
+
+.rightTextContent
+{
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    flex-direction: column;
+    width: 60vw;
+    padding: 100;
+    color: white;
+}
+
+.rightTextContent h2
+{
+    font-size: 32;
+    padding: 20;
+}
+
+.rightTextContent p
+{
+    float:right;
+    padding-top: 40;
+    word-wrap: break-word;
+    width: 20vw;
+    font-size: 18;
+    line-height: 1.75;
+} 
+
+.projectContribution
+{
+    background-color: rgba(31, 32, 37, 1);
+    display: flex;
+    justify-content: center;
+    background-image: url("/Media/Images/Projects/LostAndFound/examine.png");
+    background-size: cover;
+}
+
+li
+{
+    list-style-type: none;
+    padding-left:20px;
+    font-size: 16;
+    line-height: 1.75;
+    list-style-image: url("/Media/Images/Icons/list.png");
+}
+
+.projectButtons
+{
+    margin-top: 20;
+    padding-top: 30vh;
+}
+
+.link
+{
+    border-color: #ffc426;
+    background-color: rgba(39, 40, 45, 0.75);
+    color: orange;
+    text-align: center;
+    line-height: 1;
+    padding: 0.5em 1.25em;
+    font-size: 18;
+    margin: 0.3em;
+}

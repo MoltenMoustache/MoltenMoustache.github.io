@@ -147,6 +147,13 @@ header nav button a:hover
     display:inline-block;
 }
 
+.projectTile:hover, .projectTile:focus
+{
+    box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25em);
+  transition: 0.25s;
+}
+
 .projectColumn
 {
     flex-direction: column;
