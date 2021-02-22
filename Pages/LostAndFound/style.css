@@ -95,6 +95,7 @@ header nav button a:hover
     background-color: rgba(39, 40, 45, 1);
     background-image: url("/Media/Images/Projects/LostAndFound/holdingCar.png");
     background-size: cover;
+    overflow: hidden;
 }
 
 .projectSplash iframe
