@@ -86,7 +86,8 @@ header nav button a:hover
     justify-content: center;
     align-items: center;
     background-color: rgba(39, 40, 45, 1);
-    background-image: url("/Media/Images/Projects/Jumpstart/blurred-cat-alley.png");
+    background-image: url("/Media/Images/Projects/FrameThisRedux/blurred-game.png");
+    background-size: cover;
 }
 
 .projectSplash iframe
@@ -99,7 +100,7 @@ header nav button a:hover
     background-color: rgba(31, 32, 37, 1);
     display: flex;
     justify-content: center;
-    background-image: url("/Media/Images/Projects/Jumpstart/noo.png");
+    background-image: url("/Media/Images/Projects/FrameThisRedux/blurred-logo.png");
 }
 
 .leftTextContent 
@@ -165,7 +166,8 @@ header nav button a:hover
     background-color: rgba(31, 32, 37, 1);
     display: flex;
     justify-content: center;
-    background-image: url("/Media/Images/Projects/Jumpstart/blur.png");
+    background-image: url("/Media/Images/Projects/FrameThisRedux/blurred-logo_02.png");
+    background-size: cover;
 }
 
 li
