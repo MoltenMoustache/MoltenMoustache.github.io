@@ -25,13 +25,11 @@ html
 header
 {
     height: 100px;
-    width: auto;
     background-size: cover;
     background-position: center;
     top: 0;
     background-color: rgba(31, 32, 37, 1);
     z-index: 100;
-    padding: 7 7 0;
     overflow-x: hidden;
 }
 
@@ -88,15 +86,22 @@ header nav button a:hover
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
-#splash img
+#splash h1
 {
-    object-fit: cover;
-    height:  65%;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    font-size: 54;
+}
+
+#splash h2
+{
+    color:lightgray;
+    font-size: 32;
 }
 
 .section
@@ -108,7 +113,6 @@ header nav button a:hover
 {
     background-color: rgba(39, 40, 45, 1);
     color: white;
-    height: 70vh;
     box-shadow: 0px 0.5px 5px 0px rgba(0,0,0,0.75) inset;
 }
 
@@ -122,6 +126,7 @@ header nav button a:hover
 {
     padding: 0;
     padding-top: 5vh;
+    padding-bottom: 6vh;
 }
 #project h2
 {
@@ -220,8 +225,18 @@ header nav button a:hover
 {
     background-color: rgba(31, 32, 37, 1);
     color: white;
-    display: flex;
-    justify-content: center;
+}
+
+#about button
+{
+    border-color: #ffc426;
+    background-color: rgba(39, 40, 45, 0.75);
+    color: orange;
+    text-align: center;
+    line-height: 1;
+    padding: 0.5em 1.25em;
+    font-size: 24;
+    width: 10em;
 }
 
 #feed
@@ -232,14 +247,17 @@ header nav button a:hover
 #about .content
 {
     padding-top: 5vh;
-    display:flex;
-    padding-bottom: 20vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom:10vh;
 }
+
+
 
 #about img
 {
     width: 20vw;
-    padding-left: 5vw;
+    padding-right: 20vw;
     padding-top:7vh;
 }
 
@@ -247,9 +265,12 @@ header nav button a:hover
 {
     padding-top:2vh;
     line-height: 20vh;
-    height: 200px;
     text-align: left;
     word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20vw;
+    padding-right: 100;
 }
 
 h2
@@ -263,7 +284,61 @@ h2
     font-size:17;
     display: inline-block;
     vertical-align: middle;
-    width:25vw;
+    padding-bottom: 10vh;
+}
+
+@media only screen and (max-width: 1200px)
+{
+    #about .content
+    {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #about img
+    {
+        width: 60vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    #about #textContent
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    #about #textContent h2
+    {
+        text-align: center;
+        font-size: 56;
+    }
+
+    button
+    {
+        text-align: center;
+        margin: 0;
+    }
+
+    #splash
+    {
+        text-align: center;
+    }
+
+    #splash h1
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    #splash h2
+    {
+        padding: 0;
+        margin: 0;
+    }
 }
 
 #feed-linkedIn
