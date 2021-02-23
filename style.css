@@ -81,26 +81,28 @@ header nav button a:hover
 #splash
 {
     background-image:url("Media/Images/Projects/QuadKill.gif");
-    height: 65vh;
+    height: 650;
     background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   color: white;
 }
 
 #splash h1
 {
+    padding-left: 200;
     font-size: 54;
+    text-align: left;
 }
 
 #splash h2
 {
     color:lightgray;
+    padding-left: 200;
     font-size: 32;
 }
 
@@ -314,7 +316,7 @@ h2
     #about #textContent h2
     {
         text-align: center;
-        font-size: 56;
+        font-size: 54;
     }
 
     button
@@ -323,20 +325,17 @@ h2
         margin: 0;
     }
 
-    #splash
-    {
-        text-align: center;
-    }
-
     #splash h1
     {
         padding: 0;
+        padding-left: 200;
         margin: 0;
     }
 
     #splash h2
     {
         padding: 0;
+        padding-left: 200;
         margin: 0;
     }
 }
