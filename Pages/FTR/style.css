@@ -22,6 +22,10 @@ html
     justify-content: center;
 }
 
+body
+{
+    background-color: rgba(31, 32, 37, 1);
+}
 header
 {
     height: 100px;
@@ -29,10 +33,11 @@ header
     background-size: cover;
     background-position: center;
     top: 0;
-    background-color: rgba(31, 32, 37, 1);
+    background-color: rgba(2, 2, 2, 0.5);
     z-index: 100;
     padding: 7 7 0;
     overflow-x: hidden;
+    position: sticky;
 }
 
 header nav
@@ -195,4 +200,61 @@ li
     padding: 0.5em 1.25em;
     font-size: 18;
     margin: 0.3em;
+}
+
+.projectLinks
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectLinks img
+{
+    height: 4em;
+    width: 3em;
+}
+
+.projectLinks a
+{
+    text-decoration: none;
+}
+
+.linkText
+{
+    color: white;
+    padding-top: 30;
+    padding-bottom: 30;
+    padding-right: 40;
+    padding-left: 40;
+
+}
+
+.next
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previous
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkText h3
+{
+    color: rgb(158, 158, 158);
+}
+
+#nextText
+{
+    text-align: left;
+}
+
+#previousText
+{
+    text-align: right;
 }

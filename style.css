@@ -22,16 +22,22 @@ html
     justify-content: center;
 }
 
+body
+{
+    background-color: rgba(31, 32, 37, 1);
+}
 header
 {
     height: 100px;
+    width: auto;
     background-size: cover;
     background-position: center;
     top: 0;
-    background-color: rgba(31, 32, 37, 1);
+    background-color: rgba(2, 2, 2, 0.5);
     z-index: 100;
-    overflow-x: hidden;
     padding: 7 7 0;
+    overflow-x: hidden;
+    position: sticky;
 }
 
 header nav
