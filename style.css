@@ -33,7 +33,7 @@ header
     background-size: cover;
     background-position: center;
     top: 0;
-    background-color: rgba(31, 32, 37, 1);
+    background-color: rgba(31, 32, 37, 0.8);
     z-index: 100;
     padding: 7 7 0;
     overflow-x: hidden;
